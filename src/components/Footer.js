@@ -7,10 +7,7 @@ const Footer = () => {
         
 <div className="container my-5">
  
-  <footer
-          className="text-center text-lg-start text-white"
-          
-          >
+  <footer className="text-center text-lg-start text-black">
   
     <div className="container p-4 pb-0">
     
@@ -40,17 +37,17 @@ const Footer = () => {
               Useful links
             </h6>
             <p>
-              <Link to="/adminlogin" className="text-white">Admin</Link>
+              <Link to="/adminlogin" className="text-black">Admin</Link>
             </p>
             
             <p>
-              <Link to="/" className="text-white">About Us</Link>
+              <Link to="/" className="text-black">About Us</Link>
             </p>
             <p>
-              <Link to="/" className="text-white">Help</Link>
+              <Link to="/" className="text-black">Help</Link>
             </p>
             <p>
-              <Link to="/loginmember" className="text-white">IIT-Tirupati</Link>
+              <Link to="/loginmember" className="text-black ">IIT-Tirupati</Link>
             </p>
           </div>
 
@@ -60,7 +57,7 @@ const Footer = () => {
           
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p><i className="fas fa-home mr-3"></i> Yerpadu,IIT-Tirupati, Tirupati</p>
+            <p><i className="fa fa-home mr-3"></i> Yerpadu,IIT-Tirupati, Tirupati</p>
             <p><i className="fas fa-envelope mr-3"></i> statisticsclub@iittp.ac.in</p>
             <p><i className="fas fa-phone mr-3"></i> + 91 7080995469</p>
             <p><i className="fas fa-print mr-3"></i> + 91 7080995469</p>
@@ -77,15 +74,7 @@ const Footer = () => {
       <section className="p-3 pt-0">
         <div className="row d-flex align-items-center">
         
-          <div className="col-md-7 col-lg-8 text-center text-md-start">
           
-            <div className="p-3">
-              © 2023 Copyright:
-              <Link className="text-white" to="https://mdbootstrap.com/"
-                 >TheStatisticsClub.com</Link>
-            </div>
-          
-          </div>
          
 
         
@@ -95,32 +84,27 @@ const Footer = () => {
                className="btn btn-outline-light btn-floating m-1"
                
                role="button"
-               ><i className="fab fa-facebook-f"></i
-              ></Link>
+               ><i className="fab fa-facebook-f"></i></Link>
 
            
             <Link to="/" 
                className="btn btn-outline-light btn-floating m-1"
                
                role="button"
-               ><i className="fab fa-twitter"></i
-              ></Link>
+               ><i className="fab fa-twitter"></i ></Link>
 
            
             <Link to="/" 
                className="btn btn-outline-light btn-floating m-1"
                
                role="button"
-               ><i className="fab fa-google"></i
-              ></Link>
+               ><i className="fab fa-google"></i></Link>
 
             
             <Link to="/" 
                className="btn btn-outline-light btn-floating m-1"
                
-               role="button"
-               ><i className="fab fa-instagram"></i
-              ></Link>
+               role="button"><i className="fab fa-instagram"></i></Link>
           </div>
           
         </div>

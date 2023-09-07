@@ -2,7 +2,9 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import Blogcard from './Blogcard';
 import blogcontext from '../context/blogcontext';
 import Layout from './Layout';
-
+import Events from './Events';
+import './procar.css'
+import Aboutus from './Aboutus';
 const Home = () => {
     
 
@@ -16,18 +18,10 @@ const Home = () => {
     <>
     <Layout>
     
-    <div className="row my-3">
-                <div className="container mx-2"> 
-                {blog.length===0 && 'No Products to display'}
-                <div class="container text-center">
-                <div class="row row-cols-md-3 row-cols-1">
-                {blog.map((p) => {
-                    return <Blogcard key={blog._id}  blog={p} />
-                })}
-            </div>
-            </div>
-            </div>
-            </div>
+    <h2 className="upc">About Us</h2>
+    <Aboutus/>
+            <h2 className="upc">Our Upcoming Event</h2>
+            <Events/>
     </Layout>
     </>
   )

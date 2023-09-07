@@ -12,13 +12,16 @@ import blogcontext from '../context/blogcontext';
                     <div className="card-body">
                         <div className="d-flex align-items-center">
                             <h5 className="card-title">{blogs.title}</h5>
-                            <i className="fa fa-trash-alt mx-2" onClick={()=>{deleteBlog(blogs._id)}}></i>
-                            <i className="fa-solid fa-pen-to-square mx-2" onClick={()=>{updateBlog(blogs)}}></i>
+                            
                         </div>
                         <p className="card-text">{blogs.description}</p>
                         
                         <p className="card-text">{blogs.urltoimage}</p>
                         <p className="card-text">{blogs.tag}</p>
+                        <div>
+                        <button type="button" class="btn btn-outline-danger" onClick={()=>{deleteBlog(blogs._id)}}>Delete</button>
+                            <button type="button" class="btn btn-outline-success" onClick={()=>{updateBlog(blogs)}}>Update</button>
+                        </div>
                     </div>
                 </div>
             </div>

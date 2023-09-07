@@ -4,18 +4,18 @@ import {Link} from 'react-router-dom'
 const Blogcard = (props) => {
   const {blog}=props;
   const mystyle={
-    "width":"24rem",
-    "height":"20em"
+    "width":"100%",
+    "height":"10em"
   }
   
   return (
     <div>
        <div class="card" style={mystyle}>
-       <h2 class="card-title">{blog.title}</h2>
+       <h5 class="card-title">{blog.title}</h5>
   <div class="card-body">
     
     <p class="card-text">{blog.description}</p>
-    <p class="card-text">{blog.tag}</p>
+    
     
 
     <Link href="/" className="btn btn-primary">Read More</Link>

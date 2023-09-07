@@ -1,3 +1,39 @@
 #changeheight{
     height:13em;
 }
+.makeitcenter{
+    display: grid;
+    justify-content: center;
+}
+.im{
+    width: 100%;
+    height: 300px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.navi{
+    background-color: orange;
+    padding-top: 0%;
+    margin-bottom: 6px;
+    position: fixed;
+    z-index: 10;
+    right:40%;
+    border-radius: 30px;
+    width: 25%;
+}
+.upc{
+    display:flex;
+    justify-content: center;
+    font-weight: 1200;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.aboutuscontent{
+    font-family: cursive;
+    font-size: 1.1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-weight: 1;
+    font-style: italic;
+
+}
