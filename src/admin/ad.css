@@ -1,0 +1,6 @@
+.addnav{
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    z-index: 10;
+}

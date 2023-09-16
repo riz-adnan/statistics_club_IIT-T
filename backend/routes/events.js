@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const fetchuser = require('../middleware/fetchuser');
-const Blog = require('../models/Blog');
+const Event = require('../models/Event');
 const { body, validationResult } = require('express-validator');
 
 // ROUTE 1: Get All the Notes using: GET "/api/notes/getuser". Login required
-router.get('/fetchallblogs', async (req, res) => {
+router.get('/fetchallevents', async (req, res) => {
     try {
-        const blogs = await Blog.find();
-        res.json(blogs)
+        const events = await Event.find();
+        res.json(events)
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Internal Server Error");
@@ -16,11 +16,11 @@ router.get('/fetchallblogs', async (req, res) => {
 })
 
 // ROUTE 2: Add a new Note using: POST "/api/notes/addnote". Login required
-router.post('/addblog', fetchuser, [
+router.post('/addevent', fetchuser, [
     body('title', 'Enter a valid title').isLength({ min: 3 }),
     body('description', 'Description must be atleast 5 characters').isLength({ min: 5 }),], async (req, res) => {
         try {
-            const { title, description, tag,urltoimage } = req.body;
+            
 
             // If there are errors, return Bad request and the errors
             const errors = validationResult(req);
@@ -28,14 +28,18 @@ router.post('/addblog', fetchuser, [
                 return res.status(400).json({ errors: errors.array() });
             }
             
-            const savedblog = await Blog.create({
+            const savedevent = await Event.create({
                 title:req.body.title,
                 description:req.body.description,
                 tag:req.body.tag,
-                urltoimage:req.body.urltoimage
+                posterlink:req.body.posterlink,
+                day:req.body.day,
+                month:req.body.month,
+                eventtime:req.body.eventtime,
+                coordinator:req.body.coordinator
             })
 
-            res.json(savedblog)
+            res.json(savedevent)
 
         } catch (error) {
             console.error(error.message);
@@ -44,23 +48,27 @@ router.post('/addblog', fetchuser, [
     })
 
 // ROUTE 3: Update an existing Note using: PUT "/api/notes/updatenote". Login required
-router.put('/updateblog/:id', fetchuser, async (req, res) => {
-    const { title, description, urltoimage,tag } = req.body;
+router.put('/updateevent/:id', fetchuser, async (req, res) => {
+    const { title, description, tag,posterlink,day,month,eventtime,coordinator } = req.body;
     try {
         // Create a newNote object
-        const newBlog = {};
-        if (title) { newBlog.title = title };
-        if (description) { newBlog.description = description };
-        if (tag) { newBlog.tag = tag };
-        if(urltoimage){newBlog.urltoimage=urltoimage}
+        const newEvent = {};
+        if (title) { newEvent.title = title };
+        if (description) { newEvent.description = description };
+        if (tag) { newEvent.tag = tag };
+        if(posterlink){newEvent.posterlink=posterlink};
+        if(day){newEvent.day=day};
+        if(month){newEvent.month=month};
+        if(eventtime){newEvent.eventtime=eventtime};
+        if(coordinator){newEvent.coordinator=coordinator};
 
         // Find the note to be updated and update it
-        let blog = await Blog.findById(req.params.id);
-        if (!blog) { return res.status(404).send("Not Found") }
+        let event = await Event.findById(req.params.id);
+        if (!event) { return res.status(404).send("Not Found") }
 
         
-        blog = await Blog.findByIdAndUpdate(req.params.id, { $set: newBlog }, { new: true })
-        res.json({ blog });
+        event = await Blog.findByIdAndUpdate(req.params.id, { $set: newBlog }, { new: true })
+        res.json({ event });
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Internal Server Error");
@@ -68,20 +76,20 @@ router.put('/updateblog/:id', fetchuser, async (req, res) => {
 })
 
 // ROUTE 4: Delete an existing Note using: DELETE "/api/notes/deletenote". Login required
-router.delete('/deleteblog/:id', fetchuser, async (req, res) => {
+router.delete('/deleteevent/:id', fetchuser, async (req, res) => {
     try {
         // Find the note to be delete and delete it
-        let blog = await Blog.findById(req.params.id);
-        if (!blog) { return res.status(404).send("Not Found") }
+        let event = await Event.findById(req.params.id);
+        if (!event) { return res.status(404).send("Not Found") }
 
         
         
 
-        blog = await Blog.findByIdAndDelete(req.params.id)
-        res.json({ "Success": "Note has been deleted", blog: blog });
+        event = await Event.findByIdAndDelete(req.params.id)
+        res.json({ "Success": "Note has been deleted", event: event });
     } catch (error) {
         console.error(error.message);
         res.status(500).send("Internal Server Error");
     }
 })
-module.exports = router
+module.exports = router;

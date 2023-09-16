@@ -19,7 +19,7 @@
     z-index: 10;
     right:40%;
     border-radius: 30px;
-    width: 25%;
+    width: 20%;
 }
 .upc{
     display:flex;
@@ -31,9 +31,64 @@
 .aboutuscontent{
     font-family: cursive;
     font-size: 1.1em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin-left: 7em;
+    margin-right: 7em;
     font-weight: 1;
     font-style: italic;
 
 }
+.card-title{
+    display:flex;
+    justify-content: center;
+    margin-top: 7px;
+    font-size: 1.5em;
+    font-weight: 1200;
+}
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+}
+
+.blogtitle{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-size: 35px;
+}
+.blogdesc{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.blogimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    
+}
+.blogtag{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+    .aboutuscontent{
+        
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        
+    
+    }
+  }

@@ -20,6 +20,8 @@ const Home = () => {
     
     <h2 className="upc">About Us</h2>
     <Aboutus/>
+    <h2 className="upc">Our Vision</h2>
+    <Aboutus/>
             <h2 className="upc">Our Upcoming Event</h2>
             <Events/>
     </Layout>

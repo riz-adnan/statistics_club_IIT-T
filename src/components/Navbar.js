@@ -23,14 +23,12 @@ const Navbar = () => {
           <Link to="/blogs" className={`nav-link ${(path.pathname==='/blogs')?'active':'' }`} ><h6>Blogs</h6></Link>
         </li>
         <li className="nav-item">
-          <Link to="/events" className={`nav-link ${(path.pathname==='/events')?'active':''}`} ><h6>Events</h6></Link>
+          <Link to="/archives" className={`nav-link ${(path.pathname==='/archives')?'active':''}`} ><h6>Archives</h6></Link>
         </li>
         <li className="nav-item">
           <Link to="/team" className={`nav-link ${(path.pathname==='/team')?'active': ''}`} ><h6>Team</h6></Link>
         </li>
-        <li className="nav-item">
-          <Link to="/quiz" className={`nav-link ${(path.pathname==='/quiz')?'active': ''}`} ><h6>Brain Teasers</h6></Link>
-        </li>
+        
 
         </ul>
       

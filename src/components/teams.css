@@ -63,3 +63,11 @@ body{margin-top:20px;
 .shadow-sm {
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
 }
+.upc{
+    display:flex;
+    justify-content: center;
+    font-weight: 1200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}

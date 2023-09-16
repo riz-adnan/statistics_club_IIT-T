@@ -47,7 +47,7 @@ const Footer = () => {
               <Link to="/" className="text-black">Help</Link>
             </p>
             <p>
-              <Link to="/loginmember" className="text-black ">IIT-Tirupati</Link>
+              <Link to="https://www.iittp.ac.in/" className="text-black ">IIT-Tirupati</Link>
             </p>
           </div>
 

@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import blogcontext from "../context/blogcontext"
-
+import { Link } from 'react-router-dom';
 import AddBlog from './Addblog';
 import Adcard from './Adcard';
+import './ad.css'
 const AdminBlog = () => {
     const context = useContext(blogcontext);
     const { blog, getBlog, editBlog } = context;
@@ -70,16 +71,22 @@ const AdminBlog = () => {
                     </div>
                 </div>
             </div>
-
+        <div className="addnav">
+        <Link to='/adminevent'  className="btn btn-outline-dark" >Events</Link>
+                            <Link to='/adminarchive' type="button" className="btn btn-outline-dark" >Archive</Link>
+        </div>
             <div className="row my-3">
-                <h2>Created Blogs</h2>
                 <div className="container mx-2"> 
-                {blogs.length===0 && 'No blogs to display'}
-                </div>
+                {blog.length===0 && 'No Products to display'}
+                <div class="container ">
+                <div class="row row-cols-md-3 row-cols-1">
                 {blog.map((p) => {
                     
                     return <Adcard key={p._id} updateBlog={updateBlog} blogs={p} />
                 })}
+                </div>
+                </div>
+                </div>
             </div>
         </>
     )
