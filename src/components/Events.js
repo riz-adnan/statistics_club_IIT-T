@@ -21,7 +21,7 @@ const Events = () => {
       
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
 <div class="container">
-<div class="row row-cols-md-1 row-cols-1">
+<div class="row row-cols-md-1 row-cols-1 row-cols-lg-3">
 <div id="events" class="event-list owl-carousel owl-loaded owl-drag">
     <div class="owl-stage-outer">
     <div class="owl-stage">

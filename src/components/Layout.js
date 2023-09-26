@@ -3,10 +3,11 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { Helmet } from "react-helmet";
 import { Toaster } from "react-hot-toast";
+import clip from '../static/vid.mp4'
 import './procar.css'
 const Layout = ({ children, title, description, keywords, author }) => {
   return (
-    <div>
+    <div className="layout">
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
@@ -16,8 +17,17 @@ const Layout = ({ children, title, description, keywords, author }) => {
       </Helmet>
       <Navbar />
       <main style={{ minHeight: "70vh" }}>
-        <Toaster />
-        <img className="im" src="https://cdn-prod.dairyaustralia.com.au/-/media/project/dairy-australia-sites/national-home/promo-components-images/i/industry-statistics-header-banner.jpg?h=382&w=680&rev=c9536bfc8bc04aada6af29718c25aac9&hash=F3368FECDA1DBDE5B37C979569EFF0AE" alt=".." />
+      <Toaster />
+        
+        
+        
+
+        <video className="im" autoPlay loop muted id="video">
+            <source src={clip} type='video/mp4' />
+            hi
+            
+    </video>
+
         {children}
       </main>
       <Footer />

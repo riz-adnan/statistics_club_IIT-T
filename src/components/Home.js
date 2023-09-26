@@ -5,6 +5,8 @@ import Layout from './Layout';
 import Events from './Events';
 import './procar.css'
 import Aboutus from './Aboutus';
+import Bot from './Bot';
+import Ourvision from './Ourvision';
 const Home = () => {
     
 
@@ -21,9 +23,10 @@ const Home = () => {
     <h2 className="upc">About Us</h2>
     <Aboutus/>
     <h2 className="upc">Our Vision</h2>
-    <Aboutus/>
+    <Ourvision/>
             <h2 className="upc">Our Upcoming Event</h2>
             <Events/>
+            <Bot/>
     </Layout>
     </>
   )

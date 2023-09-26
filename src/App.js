@@ -14,6 +14,7 @@ import Archives from './components/Archives';
 import ShowBlog from './components/ShowBlog';
 import Adminevent from './admin/Adminevent';
 import Showevent from './components/Showevent';
+import Adminarchive from './admin/Adminarchive';
 function App() {
   const context=useContext(blogcontext);
   const {current,currentevent} =context;
@@ -33,6 +34,7 @@ function App() {
       <Route exact path='/archives' element={<Archives/>} />
       <Route exact path='/adminevent' element={<Adminevent/>} />
       <Route exact path='/showevent' element={<Showevent event={currentevent}/>} />
+      <Route exact path='/adminarchive' element={<Adminarchive/>} />
       </Routes>
       </Router>
     

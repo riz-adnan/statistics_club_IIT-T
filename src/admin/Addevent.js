@@ -54,7 +54,7 @@ const Addevent = () => {
                     <input type="text" className="form-control" id="coordinator" name="coordinator" value={event.coordinator} onChange={onChange} minLength={5} required />
                 </div>
                
-                <button  type="submit" className="btn btn-primary" onClick={handleClick}>Add Blog</button>
+                <button  type="submit" className="btn btn-primary" onClick={handleClick}>Add Event</button>
             </form>
         </div>
     )

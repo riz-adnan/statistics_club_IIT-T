@@ -31,6 +31,10 @@ const EventSchema = new Schema({
         type:String,
         default:"05:00"
     },
+    coordinator:{
+        type:String,
+        default:"The Statistics Club"
+    },
     date:{
         type: Date,
         default: Date.now

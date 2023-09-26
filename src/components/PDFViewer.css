@@ -1,0 +1,26 @@
+.pdf-viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pdf-controls {
+    margin-bottom: 16px;
+  }
+  
+  .pdf-document {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .pdf-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .pdf-pagination p {
+    margin: 0 16px;
+  }
+  

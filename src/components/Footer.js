@@ -7,7 +7,7 @@ const Footer = () => {
         
 <div className="container my-5">
  
-  <footer className="text-center text-lg-start text-black">
+  <footer className="text-center text-lg-start text-white">
   
     <div className="container p-4 pb-0">
     
@@ -20,7 +20,7 @@ const Footer = () => {
               The Statistics Club
             </h6>
             <p>
-            Statistics Club of IIT-Tirupati manages statistics, quant and data science related projects and researches in IIT-Tirupati. We at Statistics club promote mathematics and statistics culture in our college.
+            The Statistics Club of IIT Tirupati opens the gateway to the world of data and statistics for the students from all disciplines. We as a community provide ample opportunity to  explore and learn everything about data, statistics and beyond through lectures, events, datathons, seminars and more.
             </p>
           </div>
          
@@ -37,18 +37,20 @@ const Footer = () => {
               Useful links
             </h6>
             <p>
-              <Link to="/adminlogin" className="text-black">Admin</Link>
+              <Link to="/adminlogin" className="text-white">Admin</Link>
             </p>
             
             <p>
-              <Link to="/" className="text-black">About Us</Link>
+              <Link to="/" className="text-white">About Us</Link>
             </p>
+            
             <p>
-              <Link to="/" className="text-black">Help</Link>
+              <Link to="https://www.iittp.ac.in/" className="text-white ">IIT-Tirupati</Link>
             </p>
-            <p>
-              <Link to="https://www.iittp.ac.in/" className="text-black ">IIT-Tirupati</Link>
-            </p>
+            <p> <Link to="/" 
+               className="btn btn-outline-light "
+               
+               role="button"><i className="fab fa-instagram"></i></Link></p>
           </div>
 
         
@@ -61,6 +63,7 @@ const Footer = () => {
             <p><i className="fas fa-envelope mr-3"></i> statisticsclub@iittp.ac.in</p>
             <p><i className="fas fa-phone mr-3"></i> + 91 7080995469</p>
             <p><i className="fas fa-print mr-3"></i> + 91 7080995469</p>
+           
           </div>
          
         </div>
@@ -78,34 +81,7 @@ const Footer = () => {
          
 
         
-          <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
           
-            <Link to="/" 
-               className="btn btn-outline-light btn-floating m-1"
-               
-               role="button"
-               ><i className="fab fa-facebook-f"></i></Link>
-
-           
-            <Link to="/" 
-               className="btn btn-outline-light btn-floating m-1"
-               
-               role="button"
-               ><i className="fab fa-twitter"></i ></Link>
-
-           
-            <Link to="/" 
-               className="btn btn-outline-light btn-floating m-1"
-               
-               role="button"
-               ><i className="fab fa-google"></i></Link>
-
-            
-            <Link to="/" 
-               className="btn btn-outline-light btn-floating m-1"
-               
-               role="button"><i className="fab fa-instagram"></i></Link>
-          </div>
           
         </div>
       </section>

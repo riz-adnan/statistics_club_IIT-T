@@ -13,6 +13,7 @@ const Blogcard = (props) => {
   const{current,displaycurrent}=context;
   const handleclick=()=>{
     displaycurrent(blog);
+    localStorage.setItem('currentblog',JSON.stringify(blog));
     navigate('/showblog');
   }
   const mystyle={
@@ -26,7 +27,7 @@ const Blogcard = (props) => {
        <h5 class="card-title">{blog.title}</h5>
   <div class="card-body">
     
-    <p class="card-text">{blog.description.substr(0,125)}....</p>
+    <p class="card-text">{blog.description.substr(0,110)}....</p>
     
     </div>
 

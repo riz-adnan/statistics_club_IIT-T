@@ -12,6 +12,8 @@ const BlogState = (props) => {
   const [current,setcurrent]=useState(currentBlog)
   const [currentevent,setcevent]=useState(currenteve);
   const [event,setevent]=useState(eventInitial)
+  const archiveIntitial=[]
+  const [archive,setarchive]=useState(archiveIntitial)
   // Get all Notes
   const getBlog = async () => {
     // API Call 
@@ -31,7 +33,14 @@ const BlogState = (props) => {
     const json=await response.json();
     setevent(json);
   }
-
+  const getarchive= async()=>
+  {
+    const response=await fetch(`${host}/api/archive/fetchallarchive`,{
+      method:'GET',
+    });
+    const json=await response.json();
+    setarchive(json);
+  }
 
   
 
@@ -69,6 +78,22 @@ const BlogState = (props) => {
     setevent(event.concat(events))
   }
 
+  const addarchive = async (title,tag,link) => {
+    // TODO: API Call
+    // API Call 
+    const response = await fetch(`${host}/api/archive/addarchive`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": window.localStorage.getItem('token')
+      },
+      body: JSON.stringify({title,tag,link})
+    });
+
+    const archives = await response.json();
+    setarchive(archive.concat(archives))
+  }
+
   // Delete a Note
   const deleteBlog = async (id) => {
     // API Call
@@ -96,6 +121,19 @@ const BlogState = (props) => {
     const json = response.json(); 
     const newEvent = event.filter((event) => { return event._id !== id })
     setevent(newEvent)
+  }
+  const deletearchive = async (id) => {
+    // API Call
+    const response = await fetch(`${host}/api/archive/deletearchive/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": window.localStorage.getItem('token')
+      }
+    });
+    const json = response.json(); 
+    const newArchive = event.filter((archive) => { return archive._id !== id })
+    setarchive(newArchive)
   }
 
 
@@ -139,7 +177,7 @@ const BlogState = (props) => {
 
 
   return (
-    <blogContext.Provider value={{ blog,current,event,currentevent, getBlog, deleteBlog,editBlog,addBlog,displaycurrent, getevent, addEvent,deleteEvent,displaycurrenteve}}>
+    <blogContext.Provider value={{ blog,current,event,currentevent,archive ,getBlog, deleteBlog,editBlog,addBlog,displaycurrent, getevent, addEvent,deleteEvent,displaycurrenteve,getarchive,addarchive,deletearchive}}>
       {props.children}
     </blogContext.Provider>
   )

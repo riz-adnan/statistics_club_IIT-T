@@ -72,7 +72,7 @@ const AdminBlog = () => {
                 </div>
             </div>
         <div className="addnav">
-        <Link to='/adminevent'  className="btn btn-outline-dark" >Events</Link>
+        <Link to='/adminevent'  className="btn btn-outline-dark"  >Events</Link>
                             <Link to='/adminarchive' type="button" className="btn btn-outline-dark" >Archive</Link>
         </div>
             <div className="row my-3">

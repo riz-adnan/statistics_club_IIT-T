@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import Blogcard from './Blogcard';
 import blogcontext from '../context/blogcontext';
 import Layout from './Layout';
-
+import { Link } from 'react-router-dom';
 const Blog = () => {
     
 
@@ -15,7 +15,13 @@ const Blog = () => {
   return (
     <>
     <Layout>
-    
+    <h2 className="upc">Blogs</h2>
+    <nav aria-label="breadcrumb" class="main-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><Link to="/">Home</Link></li>
+          <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+        </ol>
+      </nav>
     <div className="row my-3">
                 <div className="container mx-2"> 
                 {blog.length===0 && 'No Products to display'}

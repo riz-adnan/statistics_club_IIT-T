@@ -8,6 +8,7 @@ const Userevecard = (props) => {
   const{currentevent,displaycurrenteve}=context;
   const handleclick=()=>{
     displaycurrenteve(event);
+    localStorage.setItem('currentevent',JSON.stringify(event))
     navigate('/showevent');
   }
   return (

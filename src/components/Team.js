@@ -2,10 +2,12 @@ import React from 'react'
 import {Link, useLocation} from "react-router-dom";
 import Layout from './Layout'
 import './teams.css'
+
 const Team = () => {
   return (
     <div>
         <Layout>
+		
         <section class="team-section py-5">
     <div class="container">
 	    <div class="row justify-content-center">

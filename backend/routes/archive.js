@@ -24,13 +24,10 @@ router.post('/addarchive', fetchuser, async (req, res) => {
             
             const savedarchive = await Archive.create({
                 title:req.body.title,
-                description:req.body.description,
+                
                 tag:req.body.tag,
-                posterlink:req.body.posterlink,
-                day:req.body.day,
-                month:req.body.month,
-                eventtime:req.body.eventtime,
-                coordinator:req.body.coordinator
+                link:req.body.link,
+                
             })
 
             res.json(savedarchive)
