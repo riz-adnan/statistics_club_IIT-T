@@ -8,8 +8,8 @@ const Adminlogin = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(credentials.name,credentials.password);
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        
+        const response = await fetch("/api/auth/login", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ const Adminlogin = (props) => {
             body: JSON.stringify({name: credentials.name, password: credentials.password})
         });
         const json = await response.json()
-        console.log(json);
+        
         if (json.success){
             // Save the auth token and redirect
             localStorage.setItem('token', json.authtoken); 

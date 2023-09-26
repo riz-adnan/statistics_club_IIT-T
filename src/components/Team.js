@@ -95,11 +95,11 @@ const Team = () => {
 				    </div>
 			    </div>
 		    </div>
-		    <div class="col-12 col-md-6 col-lg-4">
+		<div class="col-12 col-md-6 col-lg-4">
 			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
 				    <div class="card-body p-4">
 					    <div class="member-profile position-absolute w-100 text-center">
-					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/SsXEcOp.jpeg" alt=""/>
+					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/NO0cuR6.jpg" alt=""/>
 				        </div>
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Ritvik Ravi</h5>
@@ -109,13 +109,13 @@ const Team = () => {
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
 					    <ul class="social-list list-inline mb-0 mx-auto">
-				            <li class="list-inline-item"><Link to="https://instagram.com/ritoholic?utm_source=qr&igshid=NGExMmI2YTkyZg==" class="text-dark" > <i class="fab fa-instagram fa-fw"></i></Link></li>
-			                <li class="list-inline-item"><Link to="https://www.linkedin.com/in/ritvik-ravi-a0796527b" class="text-dark" > <i class="fab fa-linkedin fa-fw"></i></Link></li>
+				            <li class="list-inline-item"><Link to="https://instagram.com/ritoholic?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" class="text-dark" > <i class="fab fa-instagram fa-fw"></i></Link></li>
+			                <li class="list-inline-item"><Link to="linkedin.com/in/ritvik-ravi" class="text-dark" > <i class="fab fa-linkedin fa-fw"></i></Link></li>
 			            
 			            </ul>
 				    </div>
 			    </div>
-		    </div>
+		    </div>
 			
 			<div class="col-12 col-md-6 col-lg-4">
 			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
@@ -184,7 +184,7 @@ const Team = () => {
 			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
 				    <div class="card-body p-4">
 					    <div class="member-profile position-absolute w-100 text-center">
-					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/LA4CRos.jpg" alt=""/>
+					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/rKX6oQL.png" alt=""/>
 				        </div>
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Aarti Jangir</h5>
@@ -268,7 +268,7 @@ const Team = () => {
 			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
 				    <div class="card-body p-4">
 					    <div class="member-profile position-absolute w-100 text-center">
-					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/3C71kS8.jpeg" alt=""/>
+					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/tA3acvy.png" alt=""/>
 				        </div>
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">R Krishna Sameer</h5>
