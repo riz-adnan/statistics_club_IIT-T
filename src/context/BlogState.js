@@ -3,7 +3,7 @@ import blogContext from "./blogcontext";
 
 
 const BlogState = (props) => {
-  const host = ""
+  const host = "https://statiscticsclubiitt.onrender.com"
   const blogInitial = []
   const eventInitial=[]
   const [blog, setBlog] = useState(blogInitial)
@@ -17,7 +17,7 @@ const BlogState = (props) => {
   // Get all Notes
   const getBlog = async () => {
     // API Call 
-    const response = await fetch(`/api/blogs/fetchallblogs`, {
+    const response = await fetch(`${host}/api/blogs/fetchallblogs`, {
       method: 'GET',
       
       
@@ -27,7 +27,7 @@ const BlogState = (props) => {
   }
   const getevent= async()=>
   {
-    const response=await fetch(`/api/events/fetchallevents`,{
+    const response=await fetch(`${host}/api/events/fetchallevents`,{
       method:'GET',
     });
     const json=await response.json();
@@ -35,7 +35,7 @@ const BlogState = (props) => {
   }
   const getarchive= async()=>
   {
-    const response=await fetch(`/api/archive/fetchallarchive`,{
+    const response=await fetch(`${host}/api/archive/fetchallarchive`,{
       method:'GET',
     });
     const json=await response.json();
@@ -49,7 +49,7 @@ const BlogState = (props) => {
    const addBlog = async (title, description, urltoimage,tag) => {
     // TODO: API Call
     // API Call 
-    const response = await fetch(`/api/blogs/addblog`, {
+    const response = await fetch(`${host}/api/blogs/addblog`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const BlogState = (props) => {
   const addEvent = async (title, description,tag,posterlink,day,month,eventtime,coordinator) => {
     // TODO: API Call
     // API Call 
-    const response = await fetch(`/api/events/addevent`, {
+    const response = await fetch(`${host}/api/events/addevent`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const BlogState = (props) => {
   const addarchive = async (title,tag,link) => {
     // TODO: API Call
     // API Call 
-    const response = await fetch(`/api/archive/addarchive`, {
+    const response = await fetch(`${host}/api/archive/addarchive`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ const BlogState = (props) => {
   // Delete a Note
   const deleteBlog = async (id) => {
     // API Call
-    const response = await fetch(`/api/blogs/deleteblog/${id}`, {
+    const response = await fetch(`${host}/api/blogs/deleteblog/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ const BlogState = (props) => {
 
   const deleteEvent = async (id) => {
     // API Call
-    const response = await fetch(`/api/events/deleteevent/${id}`, {
+    const response = await fetch(`${host}/api/events/deleteevent/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -124,7 +124,7 @@ const BlogState = (props) => {
   }
   const deletearchive = async (id) => {
     // API Call
-    const response = await fetch(`/api/archive/deletearchive/${id}`, {
+    const response = await fetch(`${host}/api/archive/deletearchive/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ const BlogState = (props) => {
   // Edit a Note
   const editBlog = async (id, title, description, urltoimage,tag) => {
     // API Call 
-    const response = await fetch(`/api/blogs/updateblog/${id}`, {
+    const response = await fetch(`${host}/api/blogs/updateblog/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
