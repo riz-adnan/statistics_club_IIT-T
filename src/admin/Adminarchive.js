@@ -26,7 +26,7 @@ const Adminarchive = () => {
                 
             <div className="addnav">
             <Link to='/adminevent'  className="btn btn-outline-dark"  >Events</Link>
-                                <Link to='/adminBlog' type="button" className="btn btn-outline-dark" >Blogs</Link>
+                                <Link to='/adminpanel' type="button" className="btn btn-outline-dark" >Blogs</Link>
             </div>
                 <div className="row my-3">
                     <div className="container mx-2"> 

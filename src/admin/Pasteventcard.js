@@ -1,12 +1,13 @@
 import React,{useContext} from 'react'
 import blogcontext from '../context/blogcontext';
-    const Eventcard = (props) => {
+    const Pasteventcard = (props) => {
         const context = useContext(blogcontext);
         const { deleteEvent } = context;
         const { event} = props;
         const mystyle={
             "width":"33%",
             
+            "margin-top":"10em"
           }
         return (
             
@@ -47,4 +48,4 @@ import blogcontext from '../context/blogcontext';
         )
     }
     
-    export default Eventcard
+    export default Pasteventcard

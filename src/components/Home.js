@@ -7,6 +7,7 @@ import './procar.css'
 import Aboutus from './Aboutus';
 import Bot from './Bot';
 import Ourvision from './Ourvision';
+import Pastevents from './Pastevent';
 const Home = () => {
     
 
@@ -20,12 +21,13 @@ const Home = () => {
     <>
     <Layout>
     
-    <h2 className="upc">About Us</h2>
+    <h2 className="upc">Introduction to Club</h2>
     <Aboutus/>
-    <h2 className="upc">Our Vision</h2>
-    <Ourvision/>
+   
             <h2 className="upc">Our Upcoming Event</h2>
             <Events/>
+            <h2 className="upc">Our Past Event</h2>
+            <Pastevents/>
             <Bot/>
     </Layout>
     </>

@@ -3,15 +3,11 @@ import { Document, Page } from 'react-pdf';
 import './PDFViewer.css'; // Create a CSS file for styling
 
 function PDFViewer() {
-  const [pdfFile, setPdfFile] = useState(null);
+  const [pdfFile, setPdfFile] = useState(window.localStorage.getItem("file"));
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  const onFileChange = (e) => {
-    const file = e.target.files[0];
-    setPdfFile(file);
-    setPageNumber(1);
-  };
+  
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
@@ -19,9 +15,7 @@ function PDFViewer() {
 
   return (
     <div className="pdf-viewer">
-      <div className="pdf-controls">
-        <input type="file" onChange={onFileChange} />
-      </div>
+     
       <div className="pdf-document">
         {pdfFile && (
           <Document file={pdfFile} onLoadSuccess={onDocumentLoadSuccess}>

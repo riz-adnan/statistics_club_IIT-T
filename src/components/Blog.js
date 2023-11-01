@@ -22,18 +22,15 @@ const Blog = () => {
           <li class="breadcrumb-item active" aria-current="page">Blogs</li>
         </ol>
       </nav>
-    <div className="row my-3">
-                <div className="container mx-2"> 
-                {blog.length===0 && 'No Products to display'}
+    
                 <div class="container ">
-                <div class="row row-cols-md-1 row-cols-1">
+                <div class="row row-cols-md-1 row-cols-1 row-cols-lg-1">
                 {blog.map((p) => {
                     return <Blogcard key={blog._id}  blog={p} />
                 })}
             </div>
             </div>
-            </div>
-            </div>
+            
     </Layout>
     </>
   )

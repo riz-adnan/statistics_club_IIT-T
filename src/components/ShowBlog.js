@@ -1,11 +1,11 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Layout from './Layout';
 import './procar.css'
 import { Link } from 'react-router-dom';
 const ShowBlog = (props) => {
     const blogs=window.localStorage.getItem('currentblog');
     const blog=JSON.parse(blogs);
-    
+    const segments = blog.description.split(/(#h\{.*?\}|#i\{.*?\})/).map(segment => segment.trim());
   return (
     <div>
         <Layout>
@@ -18,12 +18,28 @@ const ShowBlog = (props) => {
       </nav>
         <h2 className="blogtitle"> {blog.title} </h2>  
         <h6 className="blogtag">Category: {blog.tag}</h6>
-        <h6 className='blogdesc'>{blog.description.substr(0,400)}</h6>
+        <div>
+        {segments.map((segment, index) => {
+        if (segment.startsWith('#h{')) {
+          // Render subheading
+          const subheading = segment.replace(/#h\{(.+?)\}/, '$1');
+          return <h2 key={index}>{subheading}</h2>;
+        } else if (segment.startsWith('#i{')) {
+          // Render image
+          const imageUrl = segment.replace(/\#i\{(.+?)\}/, '$1');
+          return <img key={index} src={imageUrl} alt="Blog Image" />;
+        } else {
+          // Render regular text
+          return <p key={index}>{segment}</p>;
+        }
+      })}
+    </div>
+        
         {(blog.urltoimage!=="...")?<>
         <img src={blog.urltoimage} alt="Loading" className="blogimage" />
         </>:<></>
         }
-        <h6 className="blogdesc">{blog.description.substr(400)}</h6>
+       
         </Layout>
         </div>
   )

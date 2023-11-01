@@ -3,18 +3,21 @@ import blogContext from "./blogcontext";
 
 
 const BlogState = (props) => {
-  const host = "https://statiscticsclubiitt.onrender.com"
+  
   const blogInitial = []
   const eventInitial=[]
+  const pasteventInitial=[]
   const [blog, setBlog] = useState(blogInitial)
   const currentBlog={}
   const currenteve={};
   const [current,setcurrent]=useState(currentBlog)
   const [currentevent,setcevent]=useState(currenteve);
+  const [pastevent,setpastevent]=useState(pasteventInitial);
   const [event,setevent]=useState(eventInitial)
   const archiveIntitial=[]
   const [archive,setarchive]=useState(archiveIntitial)
   // Get all Notes
+  const host="";
   const getBlog = async () => {
     // API Call 
     const response = await fetch(`${host}/api/blogs/fetchallblogs`, {
@@ -22,16 +25,93 @@ const BlogState = (props) => {
       
       
     });
+   
+
     const json = await response.json() 
     setBlog(json)
   }
   const getevent= async()=>
   {
+    
     const response=await fetch(`${host}/api/events/fetchallevents`,{
       method:'GET',
     });
+    const month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const d = new Date();
+    const monthtoday= d.getMonth();
+    const datetoday=d.getDate();
     const json=await response.json();
-    setevent(json);
+    
+
+    let newEvent = JSON.parse(JSON.stringify(json))
+    // Logic to edit in client
+    let eventarray=[]
+    let pasteventarray=[]
+    setevent((eventarray))
+    setpastevent(pasteventarray)
+    for (let index = 0; index < newEvent.length; index++) {
+      const element = newEvent[index];
+      console.log(month.indexOf(element.month))
+      console.log(" hi ")
+      console.log(monthtoday)
+      if (month.indexOf(element.month)>monthtoday) {
+        eventarray.push(element)
+        
+         
+      }
+      else if (month.indexOf(element.month)==monthtoday && element.day>datetoday)
+      {
+        eventarray.push(element)
+      }
+      else{
+        pasteventarray.push(element)
+      }
+    }
+    setevent(eventarray)
+    setpastevent(pasteventarray)
+    
+    
+  }
+  const getpastevent= async()=>
+  {
+    
+    const response=await fetch(`${host}/api/events/fetchallevents`,{
+      method:'GET',
+    });
+    const month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Nov","Dec"];
+    var d = new Date();
+    var monthtoday= d.getMonth();
+    var datetoday=d.getDate();
+    const json=await response.json();
+    
+
+    let newEvent = JSON.parse(JSON.stringify(json))
+    // Logic to edit in client
+    let eventarray=[]
+    let pasteventarray=[]
+    setevent((eventarray))
+    setpastevent(pasteventarray)
+    for (let index = 0; index < newEvent.length; index++) {
+      const element = newEvent[index];
+      console.log(month.indexOf(element.month))
+      console.log(" hi ")
+      console.log(monthtoday)
+      if (month.indexOf(element.month)>monthtoday) {
+        eventarray.push(element)
+        
+         
+      }
+      else if (month.indexOf(element.month)==monthtoday && element.day>datetoday)
+      {
+        eventarray.push(element)
+      }
+      else{
+        pasteventarray.push(element)
+      }
+    }
+    setevent(eventarray)
+    setpastevent(pasteventarray)
+    
   }
   const getarchive= async()=>
   {
@@ -132,7 +212,7 @@ const BlogState = (props) => {
       }
     });
     const json = response.json(); 
-    const newArchive = event.filter((archive) => { return archive._id !== id })
+    const newArchive = archive.filter((archive) => { return archive._id !== id })
     setarchive(newArchive)
   }
 
@@ -177,7 +257,7 @@ const BlogState = (props) => {
 
 
   return (
-    <blogContext.Provider value={{ blog,current,event,currentevent,archive ,getBlog, deleteBlog,editBlog,addBlog,displaycurrent, getevent, addEvent,deleteEvent,displaycurrenteve,getarchive,addarchive,deletearchive}}>
+    <blogContext.Provider value={{ blog,current,event,currentevent,archive ,pastevent,getBlog, deleteBlog,editBlog,addBlog,displaycurrent, getevent, addEvent,deleteEvent,displaycurrenteve,getarchive,addarchive,deletearchive,getpastevent}}>
       {props.children}
     </blogContext.Provider>
   )

@@ -35,6 +35,7 @@ function App() {
       <Route exact path='/adminevent' element={<Adminevent/>} />
       <Route exact path='/showevent' element={<Showevent event={currentevent}/>} />
       <Route exact path='/adminarchive' element={<Adminarchive/>} />
+      
       </Routes>
       </Router>
     

@@ -18,7 +18,7 @@ const Blogcard = (props) => {
   }
   const mystyle={
     "width":"100%",
-    "height":"12em"
+    
   }
   
   return (
