@@ -27,7 +27,7 @@ const ShowBlog = (props) => {
         } else if (segment.startsWith('#i{')) {
           // Render image
           const imageUrl = segment.replace(/\#i\{(.+?)\}/, '$1');
-          return <img key={index} src={imageUrl} alt="Blog Image" />;
+          return <img key={index} src={imageUrl} alt="Blog Image" className="blogimage" />;
         } else {
           // Render regular text
           return <p key={index}>{segment}</p>;
