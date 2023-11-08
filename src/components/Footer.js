@@ -20,7 +20,7 @@ const Footer = () => {
               The Statistics Club
             </h6>
             <p>
-            The Statistics Club of IIT Tirupati opens the gateway to the world of data and statistics for the students from all disciplines. We as a community provide ample opportunity to  explore and learn everything about data, statistics and beyond through lectures, events, datathons, seminars and more.
+            The Statistics Club of IIT Tirupati opens the gateway to the world of Statistics, Probability and Data for students from all disciplines. As a community, we provide ample opportunity to explore and learn everything about Data, Statistics, Probability and beyond through lectures, events, datathons, seminars and more.
             </p>
           </div>
          

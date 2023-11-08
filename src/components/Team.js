@@ -16,9 +16,11 @@ const Team = () => {
 					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/GCykZFa.jpg" alt=""/>
 				        </div>
 					    <div class="card-text pt-1">
-						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Shree Ganesh Sharma</h5>
+						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Shree Ganesha Sharma</h5>
 						    <div class="mb-3 text-center"> Coordinator</div>
-						    <div>I'm an M.Sc. student in Mathematics and Statistics; I love patterns in randomness more than anything or anyone. I'm an unapologetic nerd who studies like there is no tomorrow. In my leisure, when I'm not battling my mind, I like to read and narrate stories, listen to podcasts, swim, garden, and play the violin.</div>
+						    <div>
+I'm an M.Sc. student in Mathematics and Statistics; I love patterns in randomness more than anything. I'm an unapologetic nerd who studies like there is no tomorrow. In my leisure, I like to read and narrate stories, listen to podcasts, swim, garden, and play the violin.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -39,7 +41,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Ritvik Ravi</h5>
 						    <div class="mb-3 text-center">Events and Newsletter</div>
-						    <div>I'm Ritvik, and I'm from Chennai. HUGE fan of the weeknd. I am incredibly passionate about connecting statistical applications into various fields like space and aeronautics.</div>
+						    <div>I'm Ritvik, and I'm from Chennai. HUGE fan of the Weeknd. I am incredibly passionate about connecting statistical applications to fields like space and aeronautics.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -61,7 +64,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Adnan Abbas Rizvi</h5>
 						    <div class="mb-3 text-center">Website</div>
-						    <div>Genuinely passionate about algorithms and web development, and  I embrace the ongoing journey with confidence. Crafting web experiences through code and writing algorithms brings me immense satisfaction.</div>
+						    <div>Genuinely passionate about algorithms and web development, and I embrace the ongoing journey with confidence. Crafting web experiences through code and writing algorithms brings me immense satisfaction.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -82,7 +86,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Lokeshwaran P </h5>
 						    <div class="mb-3 text-center">Design and Events</div>
-						    <div>I'm a curious chemical engineer with a passion for data and math. I possess a wide knowledge of the design and development of events, social media handles etc</div>
+						    <div>I'm a curious chemical engineer with a passion for data and math. I possess a vast knowledge of the design and development of events, social media handles, etc.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -103,7 +108,9 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Jonnalagadda Sai Charan</h5>
 						    <div class="mb-3 text-center">Design Team Head</div>
-						    <div>Passionate about design and adept at handling social media with finesse. A natural coordinator, skilled in collaborating with teams to achieve seamless results. My focus lies in blending creativity with effective communication.</div>
+						    <div>
+Passionate about design and adept at handling social media with finesse. A natural coordinator, skilled in collaborating with teams to achieve seamless results. My focus lies in blending creativity with effective communication.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -123,7 +130,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Saumya Sinha </h5>
 						    <div class="mb-3 text-center">Event and Design </div>
-						    <div>I am ambitious and hardworking.I am always looking for an opportunity to do better.I am always excited to learn something new.I hope I will contribute a lot to this club.</div>
+						    <div>I am ambitious and hardworking. I am always looking for an opportunity to do better. I am always excited to learn something new. I hope I will contribute a lot to this club.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -144,7 +152,9 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Aarti Jangir</h5>
 						    <div class="mb-3 text-center">Newsletter team</div>
-						    <div>I like analysing, interpreting and summarising data into meaningful narratives and also posses strong writing skills</div>
+						    <div>
+I like analysing, interpreting and summarising data into meaningful narratives and possess strong writing skills.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -165,7 +175,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Shreya minz </h5>
 						    <div class="mb-3 text-center">Events Management</div>
-						    <div>Eager to learn. Dedicated, Hardworking and enthusiast. </div>
+						    <div>Eager to learn. I am dedicated, Hardworking and enthusiastic.
+ </div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -184,9 +195,11 @@ const Team = () => {
 					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/cRpf43T.jpg" alt=""/>
 				        </div>
 					    <div class="card-text pt-1">
-						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Nandhvardhan Namboori</h5>
+						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Nandhavardhan Namboori
+</h5>
 						    <div class="mb-3 text-center">Events Management</div>
-						    <div>As a third-year BTech student, I proudly wear the hat of a content creator. My journey combines the technical prowess from my studies with my creative flair, and I'm especially intrigued by understanding how others approach different challenges and tasks.</div>
+						    <div>As a third-year BTech student, I proudly wear the hat of a content creator. My journey combines the technical prowess from my studies with my creative flair, and I'm especially intrigued by how others approach different challenges and tasks.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -207,7 +220,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Sumangal Bhattacharya </h5>
 						    <div class="mb-3 text-center">Session organizer</div>
-						    <div>I am Sumangal Bhattacharya, a Ph.D. student in the Department of Mathematics and Statistics at IIT Tirupati, India. I'm now working on survival analysis and multivariate response models. Copula-based models and machine learning algorithms are the primary tools I use.</div>
+						    <div>I am Sumangal Bhattacharya, a Ph.D. student in the Department of Mathematics and Statistics at IIT Tirupati, India. I'm now working on Survival Analysis and Multivariate Response Models. Copula-based models and machine learning algorithms are the primary tools I use.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -248,7 +262,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Satyam Prakash </h5>
 						    <div class="mb-3 text-center">Events </div>
-						    <div>Being a mechanical engineer, I am very fond of learning about new innovative and I am also interested in the IT sector as a programmer. I like to know about the current and international affairs. My hobby is to explore about the unknown facts and mysteries. I even recognize myself as a health conscious person. </div>
+						    <div>Being a mechanical engineer, I am very fond of learning about new innovations and interested in the IT sector as a programmer. I like to know about the current and international affairs. My hobby is to explore about unknown facts and mysteries. I am a health-conscious person.
+ </div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -269,7 +284,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Swati Rana </h5>
 						    <div class="mb-3 text-center">Events and Newsletter</div>
-						    <div>I am first year student MSC Mathematics and statistics student enthusiastic about statistics and data science. In my free time I like to go for walks and work on learning languages.</div>
+						    <div>I am a first-year M.Sc Mathematics and Statistics student enthusiastic about statistics and data science. In my free time, I like to go for walks and work on learning languages.
+</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
@@ -282,27 +298,7 @@ const Team = () => {
 			    </div>
 		    </div>
 			
-			<div class="col-12 col-md-6 col-lg-4">
-			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
-				    <div class="card-body p-4">
-					    <div class="member-profile position-absolute w-100 text-center">
-					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://i.imgur.com/4YNJY4f.jpg" alt=""/>
-				        </div>
-					    <div class="card-text pt-1">
-						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Krishnakant Uttarwar</h5>
-						    <div class="mb-3 text-center">Data analyst</div>
-						    <div>I am second year M.Tech student in Environment and Water Resource Engineering , currently I am doing my M.Tech project in remote sensing , I have intrest in data analysis and sar interfrometry.</div>
-					    </div>
-				    </div>
-				    <div class="card-footer theme-bg-primary border-0 text-center">
-					    <ul class="social-list list-inline mb-0 mx-auto">
-				            <li class="list-inline-item"><Link to="https://www.linkedin.com/in/krishnakant-u-9142071a7/" class="text-dark" ></Link> <i class="fab fa-linkedin fa-fw"></i></li>
-
-			               
-			            </ul>
-				    </div>
-			    </div>
-		    </div>
+			
 			
 			<div class="col-12 col-md-6 col-lg-4">
 			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
@@ -313,7 +309,8 @@ const Team = () => {
 					    <div class="card-text pt-1">
 						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">R Krishna Sameer</h5>
 						    <div class="mb-3 text-center">Events Management</div>
-						    <div>Sophomore UG in ME, I'm a blank slate, I'm willing to learn and explore, interested in statistics, data analytics and managing stuff, in general.</div>
+						    <div>
+I'm a sophomore undergraduate in Mechanical Engineering; I'm a blank slate. I'm willing to learn and explore and interested in statistics, data analytics and general management.</div>
 					    </div>
 				    </div>
 				    <div class="card-footer theme-bg-primary border-0 text-center">
