@@ -23,14 +23,14 @@ const ShowBlog = (props) => {
         if (segment.startsWith('#h{')) {
           // Render subheading
           const subheading = segment.replace(/#h\{(.+?)\}/, '$1');
-          return <h2 key={index}>{subheading}</h2>;
+          return <h2 key={index} className='blogsemititle'>{subheading} </h2>;
         } else if (segment.startsWith('#i{')) {
           // Render image
           const imageUrl = segment.replace(/\#i\{(.+?)\}/, '$1');
           return <img key={index} src={imageUrl} alt="Blog Image" className="blogimage" />;
         } else {
           // Render regular text
-          return <p key={index}>{segment}</p>;
+          return <p className="blogdesc" key={index}>{segment}</p>;
         }
       })}
     </div>
