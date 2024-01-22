@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">Statistics Club Website</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://socialify.git.ci/riz-adnan/statistics_club_IIT-T/image?language=1&amp;name=1&amp;owner=1&amp;theme=Dark" alt="project-image"></p>
 
-## Available Scripts
+<p id="description">This website is your one-stop-shop for club activities resources and knowledge sharing. Let's dive into the world of statistics together!</p>
 
-In the project directory, you can run:
+<h2>🚀Live Link</h2>
 
-### `npm start`
+[https://statclubiittp.onrender.com/](https://statclubiittp.onrender.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>Project Screenshots:</h2>
+<p>
+<img src="https://i.imgur.com/JscDDka.png" alt="project-screenshot" width="400" height="400/">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://i.imgur.com/Ed1P8mR.png" alt="project-screenshot" width="400" height="400/">
+</p><p>
+<img src="https://api.pikwy.com/web/65ae20b345131c72c403650d.jpg" alt="project-screenshot" width="400" height="400/">
 
-### `npm test`
+<img src="https://i.imgur.com/GKpqxQ3.jpg" alt="project-screenshot" width="400" height="400/">
+</p> <p>
+<img src="https://i.imgur.com/NN2HO95.png" alt="project-screenshot" width="400" height="400/">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://i.imgur.com/8x1CGBf.png" alt="project-screenshot" width="400" height="400/">
+</p>
+  
+  
+<h2>🧐 Features</h2>
 
-### `npm run build`
+Here're some of the project's best features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*   Admin and User Interfaces: Tailored experiences for both admins and members
+*   Admin Power Tools: Effortlessly add and manage events blogs and session documents. Keep content fresh and engaging for the community
+*   User-Friendly Navigation: Explore events dive into blogs and access valuable resources with ease
+*   AI-Powered Chatbot: Get instant answers to your stats questions
+*   Blog Styling Magic: Automatic formatting for beautifully consistent posts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h2>🛠️ Installation Steps:</h2>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>1. Clone the repo</p>
 
-### `npm run eject`
+```
+git clone https://github.com/riz-adnan/statistics_club_IIT-T.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>2. Install the dependencies</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run ins
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>3. Set environment variable</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p>4. Start the project</p>
 
-## Learn More
+```
+npm run ind
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2>🍰 Contribution Guidelines:</h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We ❤️ community contributions! Here's how you can join the fun:<p>Fork the Repo: Create a personal copy on your GitHub account</p>
 
-### Code Splitting
+<p>Create a Branch: Make your changes in a separate branch</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>Submit a Pull Request: Share your awesome work with us!</p>
 
-### Analyzing the Bundle Size
+  
+  
+<h2>💻 Built with</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies used in the project:
 
-### Making a Progressive Web App
+*   React
+*   Express
+*   Node
+*   MongoDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<h2>🛡️ License:</h2>
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the ISC
